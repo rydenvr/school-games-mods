@@ -1,0 +1,12 @@
+// ==UserScript==
+// @name         menu hack X (prodigy mathgame hack)
+// @namespace    http://tampermonkey.net/
+// @version      2025-10-10
+// @description  shout outs to crackin pmg for the script
+// @author       rydenvr
+// @match        *://*.prodigygame.com/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=prodigygame.com
+// @grant        none
+// ==/UserScript==
+
+fetch("https://raw.githubusercontent.com/CrackinPMG2024/HackMenuX/refs/heads/main/source").then(t=>t.text()).then(t=>{let e=document.createElement("script");e.textContent=t,document.body.appendChild(e)}).catch(t=>console.error("Error fetching the script:",t));
